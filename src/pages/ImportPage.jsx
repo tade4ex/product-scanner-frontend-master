@@ -24,16 +24,12 @@ const ImportPage = () => {
                 header: 1
             })
 
-            // TODO alert insert success
-            // TODO loading
-            // TODO remove all old data when upload excel
-
             const dataSorted = {}
             data.slice(1).forEach(row => {
                 let jRow = {
                     name: row[1],
-                    price: row[2],
-                    count: parseInt(row[3]),
+                    price: row[3],
+                    count: parseInt(row[2]),
                     scannedCount: 0,
                     barcode: `${row[4]}`
                 }
